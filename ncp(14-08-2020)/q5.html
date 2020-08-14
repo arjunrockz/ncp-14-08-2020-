@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html>
+    <script type = "text/javascript"> 
+        var str="";
+        var x;
+        var y;
+        var a;
+        var words=[];
+for (a=1;a<=100;a++)
+{
+    x = a%3 ==0;
+    y = a%5 ==0;
+    if(x)
+    {
+        str+="fizz"
+    }
+    if (y)
+    {
+        str+="buzz"
+    }
+    if (!(x||y))
+    {
+        str+=a;
+    }
+    str+="\n"
+}
+words=str.trim().split("  ")
+        for (let i=0;i<words.length;i++){
+            document.write(words[i]+ '<br />'); 
+        }
+        
+        </script>
+</html>

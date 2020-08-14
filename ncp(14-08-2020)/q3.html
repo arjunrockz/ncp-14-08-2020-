@@ -1,0 +1,29 @@
+<html>
+    <script type="text/javascript">
+    var numbers=[];
+    var input;
+    var check=true;
+    var max;
+    while(check){
+        input = prompt("Input numbers for histogram");
+        if(input!==null){
+            numbers.push(input)
+        }
+        else{
+            check=false
+        }
+    }
+    histogram(numbers)
+    function histogram(nums){
+        for (let i=0;i<nums.length;i++){
+            max=nums[i]
+            for (let j=0;j<max;j++){
+                document.write("*")
+            }
+            document.write("<br>")
+            max=0;
+        }
+    }
+ 
+    </script>
+</html>
